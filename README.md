@@ -7,4 +7,4 @@ Dara informacion de los pilotos y team principal
 
 AVISO!!
 ---
-Este proyecto tiene el unico fin de mejorar mi aprendizaje en HTML, Tailwind y JavaScript
+Este proyecto tiene el unico fin de mejorar mi aprendizaje en HTML5, Tailwind y JavaScript
