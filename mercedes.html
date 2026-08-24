@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link>
+    
+    <title>Fan web Mercedes F1</title>
+    <style>
+    body {
+        font-family: "Geom", sans-serif;
+    }
+    </style>
+</head>
+
+<body class="bg-[#00f5d0]">
+<!--Menu desplegable-->
+<header class="bg-black text-white relative shadow-md border-b-4 border-black z-50">
+    <img src="assets/MAPF1_SM_n_1KL.webp" alt="mercedes.png">
+        <nav class="container p-4 flex justify-between items-center text-center">
+            <ul class="hidden md:flex space-x-10 text-xl z-50">
+        
+            <li class="relative group cursor-pointer h-full py-2">
+                <span class="hover:text-[#00f5d0] transition-colors font-bold">Noticias ▾</span>
+                <ul class="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 text-left overflow-hidden">
+                    <li class="px-4 py-3 hover:bg-gray-100 border-b border-gray-100"><a href="#">Última Hora</a></li>
+                    <li class="px-4 py-3 hover:bg-gray-100 border-b border-gray-100"><a href="#">Rumores</a></li>
+                    <li class="px-4 py-3 hover:bg-gray-100"><a href="#">Entrevistas</a></li>
+                </ul>
+            </li>
+
+            <li class="relative group cursor-pointer h-full py-2">
+                <span class="hover:text-[#00f5d0] transition-colors font-bold">Temporada ▾</span>
+                <ul class="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 text-left overflow-hidden">
+                    <li class="px-4 py-3 hover:bg-gray-100 border-b border-gray-100"><a href="/temporada.html">Calendario 2025</a></li>
+                    <li class="px-4 py-3 hover:bg-gray-100 border-b border-gray-100"><a href="/resultado.html">Resultados</a></li>
+                    <li class="px-4 py-3 hover:bg-gray-100"><a href="temporadas.html">Temporadas</a></li>
+                </ul>
+            </li>
+
+            <li class="relative group cursor-pointer h-full py-2">
+                <span class="hover:text-[#00f5d0] transition-colors font-bold">Equipo ▾</span>
+                <ul class="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 text-left overflow-hidden">
+                    <li class="px-4 py-3 hover:bg-gray-100 border-b border-gray-100"><a href="GerogeRussell.html">George Russell</a></li>
+                    <li class="px-4 py-3 hover:bg-gray-100 border-b border-gray-100"><a href="kimiantonelli.html">Kimi Antonelli</a></li>
+                    <li class="px-4 py-3 hover:bg-gray-100"><a href="#">Toto Wolff</a></li>
+                </ul>
+            </li>
+
+            <li class="relative group cursor-pointer h-full py-2">
+                <span class="hover:text-[#00f5d0] transition-colors font-bold">Sustentable ▾</span>
+                <ul class="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 text-left overflow-hidden">
+                    <li class="px-4 py-3 hover:bg-gray-100 border-b border-gray-100"><a href="#">Net Zero</a></li>
+                    <li class="px-4 py-3 hover:bg-gray-100"><a href="#">Diversidad</a></li>
+                </ul>
+            </li>
+            </ul>
+        </nav>
+</header>
+
+<!--ASIDE DE LA PAGINA-->
+<div class="md:flex md:space-x-10 md:text-xl">
+    <section class=" bg-black text-white flex flex-wrap px-3 z-10 md:w-1/4 p-2">
+        <aside class="p-6" >
+            <p class="text-2xl font-extrabold">Ahora</p>
+            <p class="text-2xl font-medium">In home</p>
+
+            <!--Apartado de la hora de la pagina-->
+            <p id="hora" class="py-5">9:53AM</p>
+        </aside>
+
+    <img src="https://tse4.mm.bing.net/th/id/OIP.InHDaJ4iDJjYni4idrJMegAAAA?cb=ucfimg2&ucfimg=1&w=474&h=652&rs=1&pid=ImgDetMain&o=7&rm=3" id="imgPiloto" class="md:w-full h-96 object-cover rounded-lg shadow-md">
+
+    </section>
+    <img src="https://images.ctfassets.net/1fvlg6xqnm65/3aKqFCB64OMYBzTJ52sWr5/938621bfb64d84236f5c26a7ba4015a9/Team_Graphic_Centre.jpg?w=1920&q=75&fm=webp" class="md:w-3/4 h-auto object-cover rounded-lg shadow-lg">
+</div> 
+<footer class="bg-gray-600 text-white items-center text-center">
+    <h1>Sigue a Mercedes-AMG</h1>
+
+</footer>
+
+
+<script>
+    const hora = document.getElementById("hora")
+    function horanueva(){
+        const fechaActual = new Date().toLocaleTimeString().toUpperCase();
+        hora.innerText = fechaActual;
+    }
+    setInterval(horanueva, 1000);
+
+
+    const imgPiloto = document.getElementById("imgPiloto")
+    //Imagenes de los pilotos
+    const fotos = [
+        "https://www.total-motorsport.com/wp-content/uploads/2025/04/M494173-scaled.jpg",
+        "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/russell",
+        "https://sportsbase.io/images/gpfans/copy_1200x800/dee6316689c87063f58e82fc15a4e55b4a036044.jpg",
+        "https://cdn.motorsport.com/images/mgl/0mb4DnG2/s1000/andrea-kimi-antonelli-mercedes.jpg"
+    ];
+    //Indice del contador
+    let indiceActual = 0;
+    function siguienteFoto(){
+        //Cambio de fotos
+        indiceActual = (indiceActual + 1) % fotos.length;
+        imgPiloto.src = fotos[indiceActual];
+        
+    }
+    //cambio de fotos cada 1:30 (tiempo)
+    setInterval(siguienteFoto,60000)
+</script>
+
+</body>
+</html>

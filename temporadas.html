@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Temporadas Pasadas</title>
+    <style>
+    body {
+        font-family: "Geom", sans-serif;
+    }
+    </style>
+</head>
+<body>
+<header>
+    <section class="bg-black text-white">
+                <a href="mercedes.html"><img src="assets/MAPF1_SM_n_1KL.webp" alt="mercedes.png"></a>
+                <nav class="container p-4 flex justify-between items-center text-center">
+                        <ul class="hidden md:flex space-x-10 text-xl z-50">
+                        
+                        <li class="relative group cursor-pointer h-full py-2">
+                                <span class="hover:text-[#00f5d0] transition-colors font-bold">Noticias ▾</span>
+                                <ul class="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 text-left overflow-hidden">
+                                <li class="px-4 py-3 hover:bg-gray-100 border-b border-gray-100"><a href="#">Última Hora</a></li>
+                                <li class="px-4 py-3 hover:bg-gray-100 border-b border-gray-100"><a href="#">Rumores</a></li>
+                                <li class="px-4 py-3 hover:bg-gray-100"><a href="#">Entrevistas</a></li>
+                                </ul>
+                        </li>
+
+                        <li class="relative group cursor-pointer h-full py-2">
+                                <span class="hover:text-[#00f5d0] transition-colors font-bold">Temporada ▾</span>
+                                <ul class="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 text-left overflow-hidden">
+                                <li class="px-4 py-3 hover:bg-gray-100 border-b border-gray-100"><a href="/temporada.html">Calendario 2025</a></li>
+                                <li class="px-4 py-3 hover:bg-gray-100 border-b border-gray-100"><a href="/resultado.html">Resultados</a></li>
+                                <li class="px-4 py-3 hover:bg-gray-100"><a href="#">Temporadas</a></li>
+                                </ul>
+                        </li>
+
+                        <li class="relative group cursor-pointer h-full py-2">
+                                <span class="hover:text-[#00f5d0] transition-colors font-bold">Equipo ▾</span>
+                                <ul class="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 text-left overflow-hidden">
+                                <li class="px-4 py-3 hover:bg-gray-100 border-b border-gray-100"><a href="GerogeRussell.html">George Russell</a></li>
+                                <li class="px-4 py-3 hover:bg-gray-100 border-b border-gray-100"><a href="kimiantonelli.html">Kimi Antonelli</a></li>
+                                <li class="px-4 py-3 hover:bg-gray-100"><a href="#">Toto Wolff</a></li>
+                                </ul>
+                        </li>
+
+                        <li class="relative group cursor-pointer h-full py-2">
+                                <span class="hover:text-[#00f5d0] transition-colors font-bold">Sustentable ▾</span>
+                                <ul class="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 text-left overflow-hidden">
+                                <li class="px-4 py-3 hover:bg-gray-100 border-b border-gray-100"><a href="#">Net Zero</a></li>
+                                <li class="px-4 py-3 hover:bg-gray-100"><a href="#">Diversidad</a></li>
+                                </ul>
+                        </li>
+                        </ul>
+                </nav>
+    </section>
+    <div class="bg-[#00f5d0]">
+    <div class="md:flex space-x-10 text-xl z-50">
+        <section class="bg-black text-white flex flex-wrap px-3 md:w-1/4 p-2">
+            <h1 class="font-extrabold text-6xl">Temporadas Pasadas</h1>
+        </section>
+        <img src="https://i.redd.it/kswbdr2x8bna1.jpg" class="md:w-3/4 h-auto object-cover shadow-lg"> 
+    </div>
+</div>
+</header>
+<!-- Tabla de temporadas pasadas-->
+
+<select id="selector" class="p-2 m-4 border-2 border-black rounded shadow-lg font-bold">
+    <option value="2025">2025</option>
+    <option value="2024">2024</option>
+    <option value="2023">2023</option>
+    <option value="2022">2022</option>
+    <option value="2021">2021</option>
+    <option value="2020">2020</option>
+    <option value="2019">2019</option>
+    <option value="2018">2018</option>
+    <option value="2017">2017</option>
+    <option value="2016">2016</option>
+    <option value="2015">2015</option>
+    <option value="2014">2014</option>
+</select>
+<div id="tabla">
+
+</div>
+
+<footer class="bg-gray-600 text-white items-center text-center">
+    <h1>Sigue a Mercedes-AMG</h1>
+
+</footer>
+<script src="JS/tablaspa.js"></script>
+</body>
+</html>
